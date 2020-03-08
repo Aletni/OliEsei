@@ -329,11 +329,21 @@ fuera del año académico. De acuerdo con las regulaciones de la Universidad, es
 <template><srai>¿Que tipo de practicas puedo realizar como alumno de la ESEI?</srai></template>
 </category>
 
-
+<!--  12.2 regla -->
+<category>
+<pattern>¿ ^ tipo de practicas ^?</pattern>
+<template><srai>¿Que tipo de practicas puedo realizar como alumno de la ESEI?</srai></template>
+</category>
+ 
+ <!--  12.3 regla -->
+<category>
+<pattern>¿Como son ^ practicas ^?</pattern>
+<template><srai>¿Que tipo de practicas puedo realizar como alumno de la ESEI?</srai></template>
+</category>
 
 <!--  13 regla -->
 <category>
-<pattern>¿Donde puedo consultar la oferta de prácticas en empresas?</pattern>
+<pattern>¿Donde puedo consultar la oferta de practicas en empresas?</pattern>
 <template>
 En la siguiente direccion de la pagina web de la ESEI (https://esei.uvigo.es/docencia/practicas-en-empresa/) puedes encontrar un listado de las ofertas disponibles.
 </template>
@@ -341,7 +351,19 @@ En la siguiente direccion de la pagina web de la ESEI (https://esei.uvigo.es/doc
 
 <!--  13.1 regla -->
 <category>
-<pattern>¿Donde ^ consultar la oferta de prácticas ^?</pattern>
+<pattern>¿Donde ^ consultar la oferta de practicas ^?</pattern>
+<template><srai>¿Donde puedo consultar la oferta de prácticas en empresas?</srai></template>
+</category>
+ 
+ <!--  13.2 regla -->
+<category>
+<pattern>¿Que practicas ^ ?</pattern>
+<template><srai>¿Donde puedo consultar la oferta de prácticas en empresas?</srai></template>
+</category>
+ 
+ <!--  13.3 regla -->
+<category>
+<pattern>¿ ^ ofertas ^ practicas ^?</pattern>
 <template><srai>¿Donde puedo consultar la oferta de prácticas en empresas?</srai></template>
 </category>
 
@@ -391,6 +413,13 @@ que se hace bajo la supervisión de un tutor y al final se debe presentar y defe
 <pattern>^ Trabajos de Máster ^</pattern>
 <template><srai>¿Que son los Trabajos Fin de Grado o de Máster?</srai></template>
 </category>
+ 
+ <!-- 15.3 regla -->
+<category>
+<pattern>^ Trabajos ^</pattern>
+<template><srai>¿Que son los Trabajos Fin de Grado o de Máster?</srai></template>
+</category>
+
 
 
 
@@ -428,6 +457,12 @@ Mediante la firma e identificación inequívoca del alumno en cuestión en el do
 <pattern>¿Como * justificar mi asistencia a las actividades ^?</pattern>
 <template><srai>¿Como puedo justificar mi asistencia a las actividades de evaluacion y a sus revisiones?</srai></template>
 </category>
+ 
+ <!-- 17.2 regla -->
+<category>
+<pattern>¿ ^ asistencia ^?</pattern>
+<template><srai>¿Como puedo justificar mi asistencia a las actividades de evaluacion y a sus revisiones?</srai></template>
+</category>
 
 
 <!-- 18 regla -->
@@ -445,3 +480,17 @@ visita https://campusactivo.uvigo.gal/,
 <pattern>¿^ hacer deporte en la ESEI? </pattern>
 <template><srai>¿Que actividades deportivas ofrece la ESEI?</srai></template>
 </category>
+ 
+ <!-- 18.2 regla -->
+<category>
+<pattern>¿^ actividades deportivas ^? </pattern>
+<template><srai>¿Que actividades deportivas ofrece la ESEI?</srai></template>
+</category>
+
+ 
+ <!-- 18.3 regla -->
+<category>
+<pattern>¿^ apuntarme ^ actividades ^? </pattern>
+<template><srai>¿Que actividades deportivas ofrece la ESEI?</srai></template>
+</category>
+
