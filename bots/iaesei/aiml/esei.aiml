@@ -95,7 +95,17 @@ Los profesionales y el material puesto a disposicion del alumnado garantizan una
 </template>
 </category> 
 
+ <!-- Regla 4.1-->
+<category>
+<pattern>Debo estudiar ^ ESEI</pattern>
+<template><srai>Por que merece la pena estudiar en la ESEI</srai></template>
+</category>
 
+  <!-- Regla 4.2-->
+<category>
+<pattern>Que tiene ^ ESEI *</pattern>
+<template><srai>Por que merece la pena estudiar en la ESEI</srai></template>
+</category>
 
 <!-- 5 regla -->
 <category>
@@ -105,7 +115,29 @@ Hay una cafetería en la ESEI. Se encuentra en la salida este del Edificio Polit
 </template>
 </category>
 
-
+<!-- Regla 5.1-->
+<category>
+<pattern>Cafeteria ^ ESEI</pattern>
+<template><srai>Hay una cafeteria en la ESEI</srai></template>
+</category>
+ 
+ <!-- Regla 5.2-->
+<category>
+<pattern> Hay ^ Cafeteria ^ ESEI</pattern>
+<template><srai>Hay una cafeteria en la ESEI</srai></template>
+</category>
+ 
+  <!-- Regla 5.3-->
+<category>
+<pattern> Hay ^ comer ^ ESEI</pattern>
+<template><srai>Hay una cafeteria en la ESEI</srai></template>
+</category>
+ 
+   <!-- Regla 5.4-->
+<category>
+<pattern>La ESEI ^ comer</pattern>
+<template><srai>Hay una cafeteria en la ESEI</srai></template>
+</category>
  
 <!-- 6 regla -->
 <category>
@@ -114,126 +146,52 @@ Hay una cafetería en la ESEI. Se encuentra en la salida este del Edificio Polit
 La secretaría de la ESEI se encuentra a mano derecha tras entrar por la puerta principal del Edificio Politécnico, en el vestíbulo. 
 </template>
 </category> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
+<!-- 6.1 regla -->
+<category>
+<pattern>Tiene ^ secretaria ^  </pattern>
+<template><srai>Donde se encuentra la Secretaria de la ESEI</srai></template>
+</category>
+
+<!-- 6.1 regla -->
+<category>
+<pattern>Donde ^ secretaria ^  </pattern>
+<template><srai>Donde se encuentra la Secretaria de la ESEI</srai></template>
+</category>
+
+<!-- 6.1 regla -->
+<category>
+<pattern>Como llego ^ secretaria ^  </pattern>
+<template><srai>Donde se encuentra la Secretaria de la ESEI</srai></template>
+</category>
 
 <!-- 7 regla -->
 <category>
-<pattern>Que horario de atencion al publico tiene la secretaria del centro </pattern>
+<pattern>Que horario de atencion al publico tiene la secretaria del centro</pattern>
 <template>
 La secretaría del centro atiende al público de lunes a viernes, de 9:00 a 14:00 horas
 </template>
 </category> 
+ 
+<!-- 7.1 regla -->
+<category>
+<pattern>Cuando ^ secretaria ^  </pattern>
+<template><srai>Que horario de atencion al publico tiene la secretaria del centro</srai></template>
+</category> 
 
+<!-- 7.2 regla -->
+<category>
+<pattern>En que horario ^ secretaria ^  </pattern>
+<template><srai>Que horario de atencion al publico tiene la secretaria del centro</srai></template>
+</category> 
 
-
-
+<!-- 7.3 regla -->
+<category>
+<pattern>Cual es ^ horario ^ secretaria ^  </pattern>
+<template><srai>Que horario de atencion al publico tiene la secretaria del centro</srai></template>
+</category>
+ 
+ 
 <!-- 8 regla -->
 <category>
 <pattern>En que consiste el PAT</pattern>
@@ -241,6 +199,30 @@ La secretaría del centro atiende al público de lunes a viernes, de 9:00 a 14:0
 O PAT (Plan de Acción Titorial) da Escola Superior de Enxeñaría Informática (ESEI) é un programa de atención personalizada dirixido ao alumnado de novo ingreso. 
 O seu obxectivo é facilitar a integración do alumnado na vida universitaria en xeral e na ESEI en particular.
 </template>
+</category>
+ 
+<!-- 8.1 regla -->
+<category>
+<pattern>Que es ^ PAT^</pattern>
+<template><srai>En que consiste el PAT</srai></template>
+</category>
+ 
+ <!-- 8.2 regla -->
+<category>
+<pattern>Puedes ^ PAT^</pattern>
+<template><srai>En que consiste el PAT</srai></template>
+</category> 
+ 
+ <!-- 8.3 regla -->
+<category>
+<pattern>De que va ^ PAT^</pattern>
+<template><srai>En que consiste el PAT</srai></template>
+</category> 
+ 
+  <!-- 8.4 regla -->
+<category>
+<pattern> ^ PAT ^</pattern>
+<template><srai>En que consiste el PAT</srai></template>
 </category> 
 
 
@@ -250,12 +232,27 @@ O seu obxectivo é facilitar a integración do alumnado na vida universitaria en
 <category>
 <pattern>Cual es el protocolo de acogida de alumnos con necesidades educativas especiales</pattern>
 <template>
-El PAT (Plan de Acción Titorial) fue creado para gestionar este tipo de situaciones respecto al alumnado, esntre otras,
+El PAT (Plan de Acción Titorial) fue creado para gestionar este tipo de situaciones respecto al alumnado, entre otras.
 </template>
 </category> 
 
+  <!-- 9.1 regla -->
+<category>
+<pattern> Hay un protocolo ^</pattern>
+<template><srai>Cual es el protocolo de acogida de alumnos con necesidades educativas especiales</srai></template>
+</category>
+ 
+<!-- 9.2 regla -->
+<category>
+<pattern> Existe ^  protocolo ^</pattern>
+<template><srai>Cual es el protocolo de acogida de alumnos con necesidades educativas especiales</srai></template>
+</category> 
 
-
+<!-- 9.3 regla -->
+<category>
+<pattern>  ^  necesidades educativas especiales ^</pattern>
+<template><srai>Cual es el protocolo de acogida de alumnos con necesidades educativas especiales</srai></template>
+</category>  
 
 <!-- 10 regla -->
 <category>
@@ -265,31 +262,64 @@ La ESEI dispone de una delegación de alumnos, conocida como ESEIDA
 </template>
 </category> 
 
-
+<!-- 10.1 regla -->
+<category>
+<pattern>  ^ delegacion ^</pattern>
+<template><srai>Existe una delegacion de alumnos en la ESEI</srai></template>
+</category>
+ 
+ <!-- 10.2 regla -->
+<category>
+<pattern> Hay ^ delegacion ^</pattern>
+<template><srai>Existe una delegacion de alumnos en la ESEI</srai></template>
+</category> 
+ 
+ <!-- 10.3 regla -->
+<category>
+<pattern>  Tiene ^ ESEI ^ delegacion ^</pattern>
+<template><srai>Existe una delegacion de alumnos en la ESEI</srai></template>
+</category>
+ 
+  <!-- 10.3 regla -->
+<category>
+<pattern>  Tiene ^ ESEI ^ delegacion ^</pattern>
+<template><srai>Existe una delegacion de alumnos en la ESEI</srai></template>
+</category> 
 
 
 <!-- 11 regla -->
 <category>
 <pattern>Que es el suplemento europeo al titulo</pattern>
 <template>
-O Suplemento Europeo ao Título (SET) é o documento que otorga validez comunitaria ao currículum académico.
-Consiste nun anexo á titulación universitaria no que se pormenorizan as materias cursadas, idiomas impartidos, créditos realizados, competencias adquiridas, resultados académicos
- e cualificación profesional do graduado, máster ou doctorado, cos seus nomes e apelidos, entre outras acreditaciones fidedignas en toda Europa.
+El suplemento de título europeo (SET) es el documento que otorga validez comunitaria al plan de estudios académico.
+Consiste en un apego al título universitario en el que se estudian las materias estudiadas, las lenguas enseñadas, los créditos obtenidos, las competencias adquiridas, los resultados académicos.
+y la calificación profesional del graduado, maestro o doctorado, con sus nombres y apellidos, entre otras acreditaciones confiables en toda Europa.
 </template>
 </category> 
 
-
+  <!-- 11.1 regla -->
+<category>
+<pattern> ^ suplemento ^</pattern>
+<template><srai>Que es el suplemento europeo al titulo</srai></template>
+</category>
+ 
+   <!-- 11.2 regla -->
+<category>
+<pattern> De que va ^ suplemento ^</pattern>
+<template><srai>Que es el suplemento europeo al titulo</srai></template>
+</category> 
 
 
 <!-- 12 regla -->
 <category>
 <pattern>¿Que tipo de practicas puedo realizar como alumno de la ESEI?</pattern>
 <template>
-Puedes realizar tanto practicas curriculares como no curriculables. Las curriculares, xestionadas pola Escola, son prácticas que están incluídas no plano de estudos do alumnado 
-(ben optativas como no Grao en Enxeñaría Informática, ou ben obrigatorias, como no Máster en Enxeñaría Informática). Realízanse obrigatoriamente durante o curso académico, 
-pois teñen o carácter administrativo de calquera outra materia. Las no curriculares estan xestionadas pola FUVI. Son máis flexibles para a empresa e o/a estudante, 
-pois entre outras cuestións pódense convocar e cursar en calquera momento, a empresa pode seleccionar ó/á alumno/a entre as persoas solicitantes, e poden realizarse 
-fóra do curso académico. Segundo a normativa da Universidade, estas prácticas deben ser remuneradas se superan as 240 horas, e non poden durar máis de 6 meses.
+ 
+Puede realizar prácticas tanto curriculares como no curriculares. Los planes de estudio, administrados por la escuela, son prácticas que se incluyen en el plan de estudios de los estudiantes.
+(ya sea opcional como en el Grado en Ingeniería Informática, u obligatorio, como en el Máster en Ingeniería Informática). Son obligatorios durante el año académico,
+porque tienen el carácter administrativo de cualquier otro asunto. Los no curriculares son gestionados por FUVI. Son más flexibles para la empresa y el alumno,
+porque entre otras preguntas pueden ser convocadas y atendidas en cualquier momento, la compañía puede seleccionar al estudiante entre los solicitantes, y se puede hacer
+fuera del año académico. De acuerdo con las regulaciones de la Universidad, estas prácticas deben pagarse si exceden las 240 horas y no pueden durar más de 6 meses.
 </template>
 </category> 
 
